@@ -14,6 +14,8 @@ const AllocationForm = (props) => {
                 alert("The value cannot exceed remaining funds  £"+remaining);
                 setCost("");
                 return;
+
+                
             }
 
         const expense = {
@@ -62,6 +64,7 @@ const AllocationForm = (props) => {
                     <input
                         required='required'
                         type='number'
+                        step="10"
                         id='cost'
                         value={cost}
                         style={{ marginLeft: '2rem' , size: 10}}
